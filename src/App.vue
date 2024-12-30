@@ -1,30 +1,69 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div id="app" class="min-h-screen bg-gray-100 text-gray-900">
+    <header class="bg-blue-600 text-white p-4 text-center">
+      <div id="container3">
+      <img src="./assets/log.png" alt="Club de Tenis" class="w-16 mx-auto mb-2" />
+      <h1 class="text-2xl font-bold text-green-700" >Gestión del Club de Tenis</h1>
+    </div>
+    </header>
+
+    <main class="p-4 space-y-8">
+      <section>
+        <SocioTable />
+      </section>
+      <section>
+        <DeudaTable />
+      </section>
+      <section>
+        <ReservaTable />
+      </section>
+    </main>
+  </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<script>
+import SocioTable from "./components/SocioTable.vue";
+import DeudaTable from "./components/DeudaTable.vue";
+import ReservaTable from "./components/ReservaTable.vue";
+
+import './main.css'
+export default {
+  components: {
+    SocioTable,
+    DeudaTable,
+    ReservaTable,
+  },
+};
+</script>
+
+<style>
+#container3 img{
+  display:block;
+  margin:0 auto;
   text-align: center;
-  color: #2c3e50;
+}
+/* General styles for green tones */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e2ebf5;
+}
+.text-green-700 { color: #058042; }
+.ring-green-500 {color: #375704;}
+.bg-green-600{color:#375704}
+.td-background-green{columns: rgba(8, 228, 8, 0.774);}
+
+table th{
+  border: 1px solid #375704;
+}
+table td {
+  border: 1px solid #045737;
 }
 
-nav {
-  padding: 30px;
+button {
+  transition: background-color 0.2s;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+input:focus {
+  outline: none;
 }
 </style>

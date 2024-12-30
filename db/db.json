@@ -1,0 +1,106 @@
+{
+  "socios": [
+    {
+      "id": "1",
+      "name": "Juan Pérez",
+      "email": "juan@example.com"
+    },
+    {
+      "id": "2",
+      "name": "María López",
+      "email": "maria@example.com"
+    },
+    {
+      "id": "b3c2",
+      "name": "Luis Perez",
+      "email": "ver@gmail.com"
+    },
+    {
+      "id": "8d0a",
+      "name": "Marco Paco",
+      "email": "marco@gmail.com"
+    },
+    {
+      "id": "3875",
+      "name": "Amalia Prado",
+      "email": "aprado@gmail.com"
+    },
+    {
+      "id": "db3f",
+      "name": "Lucia Duran",
+      "email": "duran@gmail.com"
+    },
+    {
+      "id": "3908",
+      "name": "Victor Bravo",
+      "email": "natbra@vida.com"
+    }
+  ],
+  "deudas": [
+    {
+      "id": "9a7d",
+      "socioId": "b3c2",
+      "monto": 15
+    },
+    {
+      "id": "b456",
+      "socioId": "2",
+      "monto": 500
+    },
+    {
+      "id": "df1e",
+      "socioId": "3875",
+      "monto": 10000
+    },
+    {
+      "id": "6c9e",
+      "socioId": "3908",
+      "monto": 250
+    },
+    {
+      "id": "cfcc",
+      "socioId": "2",
+      "monto": 500
+    },
+    {
+      "id": "2a87",
+      "socioId": "2",
+      "monto": 89
+    },
+    {
+      "id": "0498",
+      "socioId": "1",
+      "monto": 59
+    }
+  ],
+  "reservas": [
+    {
+      "id": "458c",
+      "fechaEvento": "2024-12-31",
+      "horaEvento": "14:30",
+      "tipoEvento": "Clase",
+      "socioId": "db3f"
+    },
+    {
+      "id": "ee69",
+      "fechaEvento": "2025-01-05",
+      "horaEvento": "15:35",
+      "tipoEvento": "Torneo",
+      "socioId": "8d0a"
+    },
+    {
+      "id": "86c7",
+      "fechaEvento": "2024-12-30",
+      "horaEvento": "14:35",
+      "tipoEvento": "Partido_Amistoso",
+      "socioId": "3875"
+    },
+    {
+      "id": "e7b9",
+      "fechaEvento": "2025-01-05",
+      "horaEvento": "12:36",
+      "tipoEvento": "Clase",
+      "socioId": "3908"
+    }
+  ]
+}

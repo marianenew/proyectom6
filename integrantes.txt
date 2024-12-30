@@ -1,0 +1,27 @@
+Nombre: Mariane Silvia Rendon Pacheco
+Parctica 2
+
++----------------+        +----------------+        +----------------------+
+|     Socio      |        |     Deuda      |        |  Reserva de Evento   |
++----------------+        +----------------+        +----------------------+
+| ID (PK)        |<---+   | ID (PK)        |        | ID (PK)              |
+| name           |    |    | Monto         |        | fechaEvento          |
+| Email          |    +---| SocioID (FK)   |        | horaEvento           |
+|                |    |   |                |   +----| SocioID (FK)         |
++----------------+    |   +----------------+   |    | tipoEvento           |
+                      |________________________|    +----------------------+
+
+- components
+    ________SocioTable (Agregar, Editar ,Eliminar, filtar por Nombre)
+    ________DeudaTable (Agregar, Eliminar, filtar por deuna mayor a 100)
+    ________ReservaTable (Agregar, Editar ,Eliminar, filtar por Tipo de evento)
+
+Requiere
+npm install
+npm install -g @vue/cli
+npm install axios
+npm install -g json-server
+cd db
+json-server --watch db.json --port 3000
+npm run serve
+
